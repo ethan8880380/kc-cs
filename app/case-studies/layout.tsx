@@ -1,6 +1,9 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 
+// Force dynamic rendering for all case studies pages
+export const dynamic = 'force-dynamic'
+
 interface CaseStudiesLayoutProps {
   children: React.ReactNode
 }

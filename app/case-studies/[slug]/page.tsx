@@ -16,14 +16,8 @@ interface CaseStudyPageProps {
   }>
 }
 
-// Generate static params for all case studies (excluding coming soon ones)
-export async function generateStaticParams() {
-  return caseStudies
-    .filter((study) => !study.comingSoon)
-    .map((study) => ({
-      slug: study.slug,
-    }))
-}
+// Force dynamic rendering - pages are rendered on-demand
+export const dynamic = 'force-dynamic'
 
 export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   const { slug } = await params

@@ -3,6 +3,9 @@ import { SiteFooter } from "@/components/site-footer"
 import { SidebarNav } from "@/components/sidebar-nav"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
+// Force dynamic rendering for all docs pages
+export const dynamic = 'force-dynamic'
+
 interface DocsLayoutProps {
   children: React.ReactNode
 }
