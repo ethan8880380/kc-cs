@@ -12,7 +12,7 @@ export const commercialAnalyticsHub: CaseStudy = {
   thumbnail: "/cs/comm/comm-hero.png", // TODO: Replace with hub homepage screenshot
   gradient: "from-blue-500/20 via-indigo-500/10 to-violet-500/20",
   stats: [
-    { label: "Discovery Time Reduction", value: "~60min → <1min" },
+    { label: "Discovery Time Reduction", value: "about 60min → <1min" },
     { label: "Active Users", value: "1,000+" },
   ],
   contentGroups: [
